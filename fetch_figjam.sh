@@ -115,6 +115,7 @@ fetch_figjam() {
 
 # Allow sourcing or direct execution
 if [[ "${BASH_SOURCE[0]:-$0}" == "$0" ]]; then
+  source .env
   fetch_figjam "$@"
   exit $?
 fi
