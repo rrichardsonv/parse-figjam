@@ -14,8 +14,8 @@ brew install jq
 2. Clone the repo into the skills directory
 
 ```
-cd .claude
-mkdir -p skills
+cd ~/.claude
+mkdir -p ./skills
 cd skills
 git clone git@github.com:rrichardsonv/parse-figjam.git
 cd parse-figjam
