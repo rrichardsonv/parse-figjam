@@ -1,5 +1,5 @@
 # parse-figjam
-Claude skill for parsing figjam diagrams using the figma json api
+Claude skill for parsing figjam diagrams using the Figma json api [Docs](https://developers.figma.com/docs/rest-api/file-endpoints/#get-file-nodes-endpoint)
 
 ## Setup
 
@@ -23,11 +23,15 @@ chmod +x ./fetch_figjam.sh
 cp .env.example .env
 ```
 
+****
+
 3. Generate an access token with `file_content:read` scope in figma and add it to your `.env`
 
 https://developers.figma.com/docs/rest-api/authentication/#generate-a-personal-access-token
 
 <img width="600" alt="Image" src="https://github.com/user-attachments/assets/d1769ee4-834d-48f8-81ce-0f54d045df60" />
+
+****
 
 4. Verify that it shows up in claude code by running `/skills` you should see a `/parse-figjam` option available
 
